@@ -12,15 +12,24 @@ export interface Funcionarios_Instance  extends Model {
  export const Funcionarios = sequelize.define<Funcionarios_Instance>('funcionarios',{
      //Estrutura do seu Banco de dados
      id: {
-         primaryKey: true,
-         autoIncrement: true,
-         type: DataTypes.INTEGER
+        primaryKey: true,
+        autoIncrement: true,
+        type: DataTypes.INTEGER
+     },
+     name: {
+        type: DataTypes.STRING
      },
      position: {
-         type: DataTypes.STRING
+        type: DataTypes.STRING
+     },
+     email: {
+        type: DataTypes.STRING
      },
      wage: {
-         type: DataTypes.FLOAT
+        type: DataTypes.FLOAT
+     },
+     password: {
+        type: DataTypes.STRING
      }
  }, {
      tableName: 'funcionarios',
