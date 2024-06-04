@@ -17,6 +17,7 @@ router.post('/singin', UserController.singin);
 router.post('/singup', UserController.singup);
 
 router.get('/funcionarios', ApiController.funcionarios);
+router.put('/funcionario/:id', ApiController.editFuncionario);
 
 
 export default router;
