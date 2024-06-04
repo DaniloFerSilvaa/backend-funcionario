@@ -12,10 +12,11 @@ router.get('/', ( req, res ) => {
 router.get('/ping', ApiController.ping);
 //router.get('/create', ApiController.create);
 
+//Rotas de login e cadastro.
 router.post('/singin', UserController.singin);
+router.post('/singup', UserController.singup);
 
 router.get('/funcionarios', ApiController.funcionarios);
-router.post('/funcionario', ApiController.funcionario);
 
 
 export default router;
